@@ -1,0 +1,4 @@
+var s=3/0; 
+typeof(s) - number
+var f=Nan;
+typeof(t) - number

@@ -1,0 +1,18 @@
+var a='world'
+var b='hello'
+var c='two';
+a>b-true
+a<b-false
+
+a='HELLO'
+b='hello'
+a<b - true
+Lower case letter has bigger than upper case.
+
+
+a='deer'
+b='dear'
+a<b-True
+
+Since String compare is used to compare every letter.
+In this case de(e)r is greater than de(a)r.
