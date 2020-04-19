@@ -1,0 +1,43 @@
+Variable Arguments (Varargs)
+----------------------------------
+In JDK 5, Java has included a feature that simplifies the creation of methods that need to take a variable number of arguments. 
+
+Syntax:
+public static void fun(int ... a) 
+{
+   // method body
+} 
+
+
+Example:
+class Test1 
+{ 
+    // A method that takes variable number of integer 
+    // arguments. 
+    static void fun(int ...a) 
+    { 
+        System.out.println("Number of arguments: " + a.length); 
+  
+        // using for each loop to display contents of a 
+        for (int i: a) 
+            System.out.print(i + " "); 
+        System.out.println(); 
+    } 
+  
+    // Driver code 
+    public static void main(String args[]) 
+    { 
+        // Calling the varargs method with different number 
+        // of parameters 
+        fun(100);         // one parameter 
+        fun(1, 2, 3, 4);  // four parameters 
+        fun();            // no parameter 
+    } 
+} 
+
+Output:
+Number of arguments: 1
+100 
+Number of arguments: 4
+1 2 3 4 
+Number of arguments: 0

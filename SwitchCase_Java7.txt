@@ -1,0 +1,31 @@
+One of the new features added in Java 7 is the capability to switch on a String.
+The switch statement when used with a String uses the equals() method to compare the given expression to
+each value in the case statement and is therefore case-sensitive and will throw a NullPointerException if the expression is null.
+
+Previous Version:
+
+String color = "red";  
+      
+    if (color.equals("red")) {  
+      System.out.println("Color is Red");  
+    } else if (color.equals("green")) {  
+      System.out.println("Color is Green");  
+    } else {  
+      System.out.println("Color not found");  
+    } 
+
+
+Current Version:
+
+String color = "red";  
+   
+ switch (color) {  
+ case "red":  
+   System.out.println("Color is Red");  
+   break;  
+case "green":  
+  System.out.println("Color is Green");  
+   break;  
+ default:  
+     System.out.println("Color not found");  
+ }   

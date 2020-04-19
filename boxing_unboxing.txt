@@ -1,0 +1,21 @@
+Boxing:
+
+Wrapper classes are those whose objects wraps a primitive data type within them. 
+In the java.lang package java provides a separate class for each of the primitive data type namely Byte, Character, Double, Integer, Float, Long, Short.
+Example:
+Integer obj = new Integer ("2526");
+
+Unboxing:
+Whereas, converting an object into corresponding primitive datatype is known as unboxing.
+
+Example:
+
+public class Sample {
+   public static void main (String args[]){
+      Integer obj = new Integer("2526");
+      int i = obj.intValue();//unboxing
+      System.out.println(i);
+   }
+}
+Output
+2526

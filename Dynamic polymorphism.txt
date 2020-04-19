@@ -1,0 +1,52 @@
+4. create 4 classes
+lady - base
+
+sub classes
+	empl
+	Home maker
+	member
+
+implement dynamic polymorphism
+
+------------------------------------------------------
+
+
+class Employee{
+public void work(){
+system.out.println("Work during office hours")
+}
+}
+
+class HomeMaker extends Employee{
+public void work(){
+system.out.println("Home Maker Work in Home")
+}
+
+class Member extends Employee{
+public void work(){
+system.out.println("Member in a Family")
+}
+
+class Lady{
+public static void main(String[] args){
+Employee emp =new Employee();
+HomeMaker hm = new HomeMaker();
+Member mem = new Member();
+
+Employee ref;
+ref = emp;
+emp.work();
+
+emp = hm;
+hm.work();
+
+emp = mem;
+mem.work();
+
+
+}
+
+Output: 
+Work during office hours
+Home Maker Work in Home
+Member in a Family
